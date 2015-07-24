@@ -70,7 +70,7 @@ After restoring the nagios data on Hyper-V then attempting to login as nagiosadm
 
 - [ ] Insert authorized_for_all_objects key:
    - `INSERT INTO xi_usermeta (usermeta_id, user_id, keyname, keyvalue, autoload)`
-         `VALUES ( 1287, 18, 'authorized_for_all_objects', 1, 1 );`
+         `VALUES ( 1285, 18, 'authorized_for_all_objects', 1, 1 );`
 
 - [ ] Verify nagiosadmin account's security settings
    - `select usermeta_id, keyname, keyvalue from xi_usermeta where user_id = 18 order by usermeta_id ;`
